@@ -1,0 +1,1 @@
+# SYMBOL (DATA TYPE)
