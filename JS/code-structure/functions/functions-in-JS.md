@@ -46,6 +46,7 @@
 - Вложенная функция - функция, созданная внутри другой функции.  
 Такая функция может быть возвращена из родительской.
 - Самовызывающаяся функция.
+- Функция-декоратор.
 
 ## Function Declaration
 - Инициализируется на этапе создания лексического окружения (а не на этапе чтения кода). Как следствие, может быть вызвана до объявления.
@@ -98,3 +99,4 @@ func(2, 3);
 - [learn.javascript / closures](https://learn.javascript.ru/closure)
 - [learn.javascript / functions as an object](https://learn.javascript.ru/function-object)
 - [learn.javascript / new Function](https://learn.javascript.ru/new-function)
+- [learn.javascript / decorators](https://learn.javascript.ru/call-apply-decorators)
