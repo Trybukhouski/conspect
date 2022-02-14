@@ -5,10 +5,11 @@
 В данной парадигме функция - это объект, выполняющий действие.
 - JS-функция - это значение.
 
-## Types
+## Function declaration ways
 - Function Declaration
 - Function Expression
 - Array function
+- new Function (доп.)
 
 ## Function as an object
 - Функция, будучи объектом, имеет свойства.
@@ -49,6 +50,25 @@
 ## Function Declaration
 - Инициализируется на этапе создания лексического окружения (а не на этапе чтения кода). Как следствие, может быть вызвана до объявления.
 
+## new Function
+
+### About
+- Вариант создания функции, при котором тело функции передается в качестве последнего аргумента.
+- [[Environment]] ссылается на глобальное LE.
+### Syntax
+```
+let func = new Function(arg1 [, arg2, arg3], functionBody);
+func(2, 3);
+```
+- `arg1`/`arg2`/`arg3`  - "стандартные" аргументы, передаваемые в функцию (опциональны). Передаются в виде строки. Идентичные синтаксисы:
+  - `"arg1, arg 2"`
+  - `"arg1"`, `"arg2"`
+- `functionBody` - тело функции. Передается в виде строки.
+
+### Когда используется
+- При получении тела функции с сервера в строчном виде.
+- ...
+
 ## Самовызывающаяся функция
 - IIFE - immediately-invoked function expressions.
 - Это функция, вызывающаяся сразу после ее объявления.
@@ -77,3 +97,4 @@
 ## Resources
 - [learn.javascript / closures](https://learn.javascript.ru/closure)
 - [learn.javascript / functions as an object](https://learn.javascript.ru/function-object)
+- [learn.javascript / new Function](https://learn.javascript.ru/new-function)
