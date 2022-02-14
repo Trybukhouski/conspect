@@ -14,6 +14,13 @@ __Константы:__ |const|camelCaseName|=|data
 
 - Повторное объявление переменной приведет к ошибке.
 
+## Differences var - let/const
+
+Тип|Block LE|Redeclaration|Hoisting|Declaration in globalThis
+---|---|---|---|---
+__let/const__|yes|no|no|X== globalThis.property
+__var__|no|yes|yes|== globalThis.property
+
 ## Naming
 - Имя переменной должно содержать только буквы, цифры или символы $ и _.
 - Первый символ не должен быть цифрой.
@@ -26,3 +33,4 @@ __Константы:__ |const|camelCaseName|=|data
 ## Resourses
 
 - [learn.javascript / variables](https://learn.javascript.ru/variables)
+- [learn.javascript / var](https://learn.javascript.ru/var)
