@@ -1,12 +1,38 @@
 # FUNCTIONS IN JS
-
+- _Читать статью про функции(программирование) >>_
 ## About
-...
+- JS-функция реализована через object.  
+В данной парадигме функция - это объект, выполняющий действие.
+- JS-функция - это значение.
 
 ## Types
 - Function Declaration
 - Function Expression
 - Array function
+
+## Function as an object
+- Функция, будучи объектом, имеет свойства.
+- Свойства функции можно:
+  - Добавлять / удалять.
+  - Передавать по ссылке.
+  - Др.
+- Можно создавать пользовательские свойства:
+
+  ```
+  funcname.user = 'Ruslan';
+  funcname.user;     // Ruslan
+  ```
+- Свойство - это не объявленная внутри функции переменная. Это разные вещи.
+
+## Function properties
+### name
+- Содержит имя функции.
+- Работает, даже если функция является значением по умолчанию.
+- Работает, даже если функция является свойством объекта.
+
+### length
+- Содержит количество параметров функции, переданных при ее объявлении.
+- Не включает rest-параметр.
 
 ## JS features
 - Динамическое создание.
@@ -50,3 +76,4 @@
 
 ## Resources
 - [learn.javascript / closures](https://learn.javascript.ru/closure)
+- [learn.javascript / functions as an object](https://learn.javascript.ru/function-object)
