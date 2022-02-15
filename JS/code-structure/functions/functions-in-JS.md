@@ -4,6 +4,7 @@
 - JS-функция реализована через object.  
 В данной парадигме функция - это объект, выполняющий действие.
 - JS-функция - это значение.
+- Вызвать функцию можно с любым количеством параметров. Она "возьмет" только то количество (с начала), которое было передано ей в параметрах при создании, не выдав ошибки.
 
 ## Function declaration ways
 - Function Declaration
@@ -34,6 +35,11 @@
 ### length
 - Содержит количество параметров функции, переданных при ее объявлении.
 - Не включает rest-параметр.
+
+### arguments
+- Псевдомассив из переданных функции параметров.
+- Вызывается внутри функции по ключевому слову `arguments` (не через .точку - это не свойство).
+- Имеет недостатки псевдомассива: нельзя перебрать через map.
 
 ## JS features
 - Динамическое создание.
@@ -100,3 +106,4 @@ func(2, 3);
 - [learn.javascript / functions as an object](https://learn.javascript.ru/function-object)
 - [learn.javascript / new Function](https://learn.javascript.ru/new-function)
 - [learn.javascript / decorators](https://learn.javascript.ru/call-apply-decorators)
+- [learn.javascript / rest-and-spread](https://learn.javascript.ru/rest-parameters-spread-operator)
